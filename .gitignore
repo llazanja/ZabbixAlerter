@@ -57,3 +57,16 @@ typings/
 # dotenv environment variables file
 .env
 
+# Config files
+/config/APIconfig.json
+/config/monitoringConfig.json
+/config/schedule.json
+
+# Mail transporter file
+/lib/mailer/mailTransporter.js
+
+# File with database settings
+/lib/util/processMonitoringConfig.js
+
+# FIle with e-mail address
+/lib/util/sendReport.js

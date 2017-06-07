@@ -1,0 +1,5 @@
+{
+    "username" : "your zabbix username",
+    "password" : "your zabbix password",
+    "host"     : "ip address of your host"
+}

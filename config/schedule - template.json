@@ -1,0 +1,13 @@
+{
+    "daily": {
+        "hour": 23,
+	    "minute": 59,
+        "second": 59
+    },
+    "monthly": {
+        "hour": 23,
+	    "minute": 59,
+        "second": 59,
+        "dayOfWeek": 2
+    }
+}

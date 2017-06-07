@@ -1,0 +1,140 @@
+{
+    "hostname": "hostname of your server which is being monitored by zabbix",
+    "update_interval": 1,
+    "used disk space on /": { 
+        "immediate": {
+            "cooldown": 10,
+            "timespan": 5,
+            "threshold": 9
+        },     
+        "daily": {
+            "max_duration":10,
+            "timespan": 10,
+            "threshold": 9
+        },      
+        "monthly": {
+            "max_duration": 10,
+            "timespan": 15,
+            "threshold": 9
+        }
+    },
+    "used disk space on /home": { 
+        "immediate": {
+            "cooldown": 10,
+            "timespan": 5,
+            "threshold": 55
+        },     
+        "daily": {
+            "max_duration": 10,
+            "timespan": 10,
+            "threshold": 55
+        },      
+        "monthly": {
+            "max_duration": 10,
+            "timespan": 15,
+            "threshold": 55
+        }
+    },
+    "disk read on /": {
+        "immediate": {
+            "cooldown": 10,
+            "timespan": 5,
+            "threshold": 0.2
+        },    
+        "daily": {
+            "max_duration": 10,
+            "timespan": 10,
+            "threshold": 0.2
+        },
+        "monthly": {
+            "max_duration": 10,
+            "timespan": 15,
+            "threshold": 0.2
+        }
+    },
+    "disk read on /home": {
+        "immediate": {
+            "cooldown": 10,
+            "timespan": 5,
+            "threshold": 0.169
+        },    
+        "daily": {
+            "max_duration": 10,
+            "timespan": 10,
+            "threshold": 0.169
+        },
+        "monthly": {
+            "max_duration": 10,
+            "timespan": 15,
+            "threshold": 0.169
+        }
+    },
+    "disk write on /": {
+        "immediate": {
+            "cooldown": 10,
+            "timespan": 5,
+            "threshold": 50
+        },    
+        "daily": {
+            "max_duration": 10,
+            "timespan": 10,
+            "threshold": 50
+        },
+        "monthly": {
+            "max_duration": 10,
+            "timespan": 15,
+            "threshold": 50
+        }
+    },
+    "disk write on /home": {
+        "immediate": {
+            "cooldown": 10,
+            "timespan": 5,
+            "threshold": 0
+        },    
+        "daily": {
+            "max_duration": 10,
+            "timespan": 10,
+            "threshold": 0
+        },
+        "monthly": {
+            "max_duration": 10,
+            "timespan": 15,
+            "threshold": 0
+        }
+    },
+    "CPU user time": {
+        "immediate": {
+            "cooldown": 10,
+            "timespan": 5,
+            "threshold": 0.5
+        },  
+        "daily": {
+            "max_duration": 10,
+            "timespan": 10,
+            "threshold": 0.5
+        },
+        "monthly": {
+            "max_duration": 10,
+            "timespan": 15,
+            "threshold": 0.5
+        }
+    },
+    "used memory": {
+        "immediate": {
+            "cooldown": 10,
+            "timespan": 5,
+            "threshold": 47
+        },      
+        "daily": {
+            "max_duration": 10,
+            "timespan": 10,
+            "threshold": 47
+        },
+        "monthly": {
+            "max_duration": 10,
+            "timespan": 15,
+            "threshold": 47
+        }
+    }
+}

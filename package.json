@@ -1,0 +1,27 @@
+{
+  "name": "zabbix_alerter",
+  "version": "1.0.0",
+  "description": "Application used for scheduling reports about servers monitored by Zabbix. It uses Zabbix API to get data from the Zabbix Server and MySQL to store the data so it can be used in the reports.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llazanja/ZabbixAlerter.git"
+  },
+  "author": "Luka Lazanja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llazanja/ZabbixAlerter/issues"
+  },
+  "homepage": "https://github.com/llazanja/ZabbixAlerter#readme",
+  "dependencies": {
+    "async": "^2.4.1",
+    "mysql": "^2.13.0",
+    "node-schedule": "^1.2.3",
+    "nodemailer": "^4.0.1",
+    "request": "^2.81.0"
+  }
+}
