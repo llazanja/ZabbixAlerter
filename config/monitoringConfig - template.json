@@ -1,140 +1,140 @@
 {
     "hostname": "hostname of your server which is being monitored by zabbix",
     "update_interval": 1,
-    "used disk space on /": { 
+    "used disk space on /": { // PERCENTAGE
         "immediate": {
-            "cooldown": 10,
-            "timespan": 5,
-            "threshold": 9
+            "cooldown": 720, // high cooldown and max_duration because used space will stay that way for a long time
+            "timespan": 5, // timespan doesn't mean a lot here
+            "threshold": 50
         },     
         "daily": {
-            "max_duration":10,
-            "timespan": 10,
-            "threshold": 9
+            "max_duration": 720,
+            "timespan": 5,
+            "threshold": 40
         },      
         "monthly": {
-            "max_duration": 10,
-            "timespan": 15,
-            "threshold": 9
+            "max_duration": 720,
+            "timespan": 5,
+            "threshold": 30
         }
     },
-    "used disk space on /home": { 
+    "used disk space on /home": { // PERCENTAGE
         "immediate": {
-            "cooldown": 10,
-            "timespan": 5,
-            "threshold": 55
+            "cooldown": 720, // high cooldown and max_duration because used space will stay that way for a long time
+            "timespan": 5, // timespan doesn't mean a lot here
+            "threshold": 50
         },     
         "daily": {
-            "max_duration": 10,
-            "timespan": 10,
-            "threshold": 55
+            "max_duration": 720,
+            "timespan": 5,
+            "threshold": 40
         },      
         "monthly": {
-            "max_duration": 10,
-            "timespan": 15,
-            "threshold": 55
+            "max_duration": 720,
+            "timespan": 5,
+            "threshold": 30
         }
     },
-    "disk read on /": {
+    "disk read on /": { // SPS (sectors per second)
         "immediate": {
-            "cooldown": 10,
+            "cooldown": 120,
             "timespan": 5,
-            "threshold": 0.2
+            "threshold": 5000
         },    
         "daily": {
-            "max_duration": 10,
+            "max_duration": 120,
             "timespan": 10,
-            "threshold": 0.2
+            "threshold": 2000
         },
         "monthly": {
-            "max_duration": 10,
+            "max_duration": 120,
             "timespan": 15,
-            "threshold": 0.2
+            "threshold": 1000
         }
     },
-    "disk read on /home": {
+    "disk read on /home": { // SPS (sectors per second)
         "immediate": {
-            "cooldown": 10,
+            "cooldown": 120,
             "timespan": 5,
-            "threshold": 0.169
+            "threshold": 5000
         },    
         "daily": {
-            "max_duration": 10,
+            "max_duration": 120,
             "timespan": 10,
-            "threshold": 0.169
+            "threshold": 2000
         },
         "monthly": {
-            "max_duration": 10,
+            "max_duration": 120,
             "timespan": 15,
-            "threshold": 0.169
+            "threshold": 1000
         }
     },
-    "disk write on /": {
+    "disk write on /": { // SPS (sectors per second)
         "immediate": {
-            "cooldown": 10,
-            "timespan": 5,
-            "threshold": 50
+            "cooldown": 120,
+            "timespan": 1, // small timespans because write stats change quickly
+            "threshold": 6000
         },    
         "daily": {
-            "max_duration": 10,
-            "timespan": 10,
-            "threshold": 50
+            "max_duration": 120,
+            "timespan": 1,
+            "threshold": 3000
         },
         "monthly": {
-            "max_duration": 10,
-            "timespan": 15,
-            "threshold": 50
+            "max_duration": 120,
+            "timespan": 1,
+            "threshold": 2000
         }
     },
-    "disk write on /home": {
+    "disk write on /home": { // SPS (sectors per second)
         "immediate": {
-            "cooldown": 10,
-            "timespan": 5,
-            "threshold": 0
+            "cooldown": 120,
+            "timespan": 1,  // small timespans because write stats change quickly
+            "threshold": 20000
         },    
         "daily": {
-            "max_duration": 10,
-            "timespan": 10,
-            "threshold": 0
+            "max_duration": 120,
+            "timespan": 1,
+            "threshold": 5000
         },
         "monthly": {
-            "max_duration": 10,
-            "timespan": 15,
-            "threshold": 0
+            "max_duration": 120,
+            "timespan": 1,
+            "threshold": 500
         }
     },
-    "CPU user time": {
+    "CPU user time": { // PERCENTAGE
         "immediate": {
-            "cooldown": 10,
+            "cooldown": 120,
             "timespan": 5,
-            "threshold": 0.5
+            "threshold": 90
         },  
         "daily": {
-            "max_duration": 10,
+            "max_duration": 120,
             "timespan": 10,
-            "threshold": 0.5
+            "threshold": 50
         },
         "monthly": {
-            "max_duration": 10,
+            "max_duration": 120,
             "timespan": 15,
-            "threshold": 0.5
+            "threshold": 30
         }
     },
-    "used memory": {
+    "used memory": { // PERCENTAGE
         "immediate": {
-            "cooldown": 10,
+            "cooldown": 120,
             "timespan": 5,
-            "threshold": 47
+            "threshold": 90
         },      
         "daily": {
-            "max_duration": 10,
+            "max_duration": 120,
             "timespan": 10,
-            "threshold": 47
+            "threshold": 50
         },
         "monthly": {
-            "max_duration": 10,
+            "max_duration": 120,
             "timespan": 15,
-            "threshold": 47
+            "threshold": 40
         }
     }
 }
